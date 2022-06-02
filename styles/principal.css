@@ -8,15 +8,30 @@ body {
     margin: 0;
 }
 
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
 body {
     font-size: 16px;
     background-color: #ffffff;
 }
 
 header {
-    height: 60px;
+    height: 80px;
     background: rgb(229, 187, 18);
     color: #000;
+    padding-top: 8px;
 }
 
 main {
@@ -24,7 +39,7 @@ main {
     background: #fff;
 }
 
-.tudo {
+.topo {
     max-width: 1400px;
     margin: 0 auto;
     border: 1px solid #ccc;
@@ -43,13 +58,22 @@ footer {
     text-align: center;
 }
 
+.logo {
+    margin-left: 10px;
+    display: inline;
+    background-image: url("./../img/logotipo.png");
+    background-size: cover;
+    width: 140px;
+    height: 60px;
+}
+
 .nav-bar div {
-    /* border: 1px solid red; */
     flex: 2;
     text-align: left;
-    margin-top: 15px;
+    margin-top: 0px;
     margin-left: 10px;
 }
+
 
 .nav-bar ul {
     flex: 4;
@@ -67,16 +91,16 @@ footer {
     text-decoration: none;
     padding: 12px;
     margin: 0 3px;
-    color: #000;
+    color: rgb(72, 70, 70);
 }
 
 .nav-bar ul li a:hover {
-    color: red;
+    background-color: white;
+    border-radius: 20px;
 }
 
 .div-filtro {
     margin: 20px 40px;
-    height: 120px;
     display: flex;
     flex-flow: row wrap;
     text-align: center;
@@ -87,7 +111,20 @@ footer {
     display: inline-block;
 }
 
-.div-filtro ul li button {
-    margin: 10px;
+.div-filtro ul li a {
+    display: inline-block;
     padding: 10px;
+    text-decoration: none;
+    color: rgb(72, 70, 70);
+    width: 100px;
 }
+
+.div-filtro ul li a:hover {
+    background: rgb(229, 187, 18);
+    border-radius: 30px;
+}
+
+.div-filtro ul li a span {
+    display: block;
+}
+
