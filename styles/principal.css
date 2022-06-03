@@ -165,67 +165,74 @@ footer {
 }
 
 .div-pacotes {    
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    text-align: left;
     padding: 10px 30px;
     /*border: 1px solid green;*/
 }
 
 /*Sobre a empresa*/
-.card-sobre {
-    display: flex;
-    width: 300px;
-    height: 200px;
-    margin: 60px;
-    border: 1px solid rgb(72, 70, 70);
-    border-radius: 25px;
-}
-
-.card-sobre li{
-    display: flex;
-    list-style: none;
-    margin-bottom: 6px;
-}
-
-.card-sobre li img {
-    display: inline-block;
-    margin-top: 2px;
-    height: 195px;
-    width: 150px;
-    border-radius: 20px;
-    border: 1px solid green;
-}
-
-.card-sobre h2{
-    display: block;
-    color: rgb(43, 38, 38);
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 16px;
-    height: 50px;
-    border: 1px solid green;
-}
-
-.card-sobre p{
-    display: block;
-    color: rgb(72, 70, 70);
-    font-size: 14px;
-    text-align: center;
-    border: 1px solid #000;
-}
-
 .div-sobre {    
+    display: flex;
+    margin-top: 60px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 60px;
+}
+
+.card-sobre {
+    width: 30%;
+    height: 250px;
+    margin: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 10px 30px;
-    border: 1px solid green;
+    border: 1px solid #c0c0c0;
+    border-radius: 60px;
+    box-shadow: 5px 5px 5px 5px #c0c0c0;
 }
+
+.card-sobre:hover {
+    top: 10px;
+    border-bottom: 10px solid #e2e1e1;
+}
+
+.div-sobre div img {
+    width: 100%;
+    height: 90%;
+    text-align: center;
+}
+
+.div-sobre div h2 {
+    margin: 30px 2px 0px 5px;
+    color: #38B6FF;  
+}
+
+.div-sobre div p {
+    margin: 30px 30px 10px 10px;
+    color: rgb(72, 70, 70);
+    text-align: unset;
+    text-align: center;
+    font-size: 15px;
+}
+
+.card-sobre div:nth-child(1) {
+    width: 50%;
+    height: 100%;
+}
+
+.card-sobre div:nth-child(2) {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
 
 
 /*Responsivo*/
@@ -241,5 +248,13 @@ footer {
 
     .nav-bar ul {
         display: none;
+    }
+
+    .div-sobre {
+        flex-wrap: wrap;
+    }
+
+    .card-sobre {
+        width: 100%;
     }
 }
