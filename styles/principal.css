@@ -176,6 +176,7 @@ footer {
 
 /*Sobre a empresa*/
 .card-sobre {
+    display: flex;
     width: 300px;
     height: 200px;
     margin: 60px;
@@ -191,26 +192,29 @@ footer {
 
 .card-sobre li img {
     display: inline-block;
+    margin-top: 2px;
     height: 195px;
     width: 150px;
-    object-fit: cover;
     border-radius: 20px;
     border: 1px solid green;
 }
 
 .card-sobre h2{
-    display: inline-block;
-    vertical-align: top;
+    display: block;
     color: rgb(43, 38, 38);
     margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    height: 50px;
     border: 1px solid green;
 }
 
 .card-sobre p{
-    color: rgb(72, 70, 70);
     display: block;
+    color: rgb(72, 70, 70);
+    font-size: 14px;
+    text-align: center;
     border: 1px solid #000;
-
 }
 
 .div-sobre {    
