@@ -6,21 +6,9 @@ html,
 body {
     height: 100%;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Rules for sizing the icon. */
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-
-/* Rules for using icons as black on a light background. */
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
-
-/* Rules for using icons as white on a dark background. */
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
 body {
     font-size: 16px;
@@ -128,3 +116,65 @@ footer {
     display: block;
 }
 
+.centered {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.card-pacote {
+    width: 280px;
+    height: 360px;
+    border: 1px solid red;
+    margin: 20px;
+}
+
+.card-pacote li {
+    display: block;
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+/* titulo*/
+.card-pacote li:nth-child(2){
+    overflow: hidden;
+    max-height: 18px;
+    color: green;
+}
+
+/* valor */
+.card-pacote li:nth-child(4){
+    font-size: 1.3em;
+    color: red;
+}
+
+.card-pacote li img {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.div-pacotes {    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 30px;
+    border: 1px solid green;
+}
+
+@media screen and (max-width: 500px) {
+    .card-pacote {
+        margin: 10px auto;
+        width: 360px;
+    }
+
+    .card-pacote li img {
+        max-width: 100%;
+    }
+
+    .nav-bar ul {
+        display: none;
+    }
+}
