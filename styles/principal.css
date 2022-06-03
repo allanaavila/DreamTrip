@@ -124,7 +124,7 @@ footer {
 .card-pacote {
     width: 280px;
     height: 360px;
-    border: 1px solid red;
+   /* border: 1px solid red;*/
     margin: 20px;
 }
 
@@ -134,17 +134,27 @@ footer {
     margin-bottom: 6px;
 }
 
+/*avaliacao*/
+.card-pacote li a {
+    display: inline;
+    padding: 1px;
+    text-decoration: none;
+    color: rgb(72, 70, 70);
+    width: 4px;
+    height: 4px;
+}
+
 /* titulo*/
-.card-pacote li:nth-child(2){
+.card-pacote li a:nth-child(3){
     overflow: hidden;
-    max-height: 18px;
-    color: green;
+    max-height: 4px;
+    color: rgb(72, 70, 70);
 }
 
 /* valor */
-.card-pacote li:nth-child(4){
-    font-size: 1.3em;
-    color: red;
+.card-pacote li a:nth-child(4){
+    font-size: 1em;
+    color: #000;
 }
 
 .card-pacote li img {
@@ -161,9 +171,60 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px 30px;
+    /*border: 1px solid green;*/
+}
+
+/*Sobre a empresa*/
+.card-sobre {
+    width: 300px;
+    height: 200px;
+    margin: 60px;
+    border: 1px solid rgb(72, 70, 70);
+    border-radius: 25px;
+}
+
+.card-sobre li{
+    display: flex;
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+.card-sobre li img {
+    display: inline-block;
+    height: 195px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 20px;
     border: 1px solid green;
 }
 
+.card-sobre h2{
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(43, 38, 38);
+    margin-bottom: 10px;
+    border: 1px solid green;
+}
+
+.card-sobre p{
+    color: rgb(72, 70, 70);
+    display: block;
+    border: 1px solid #000;
+
+}
+
+.div-sobre {    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 30px;
+    border: 1px solid green;
+}
+
+
+/*Responsivo*/
 @media screen and (max-width: 500px) {
     .card-pacote {
         margin: 10px auto;
