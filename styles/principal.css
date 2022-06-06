@@ -34,12 +34,93 @@ main {
 }
 
 footer {
-    height: 120px;
-    background: #000;
+    width: 100%;
+    min-height: 200px;
+    background: #444;
+    display: flex;
+}
+
+footer .boxs {
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
+}
+
+/*Sobre Nos footer*/
+footer .boxs:nth-child(4) {
+    width: 400px;
+}
+
+.boxs h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.boxs ul li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+.boxs ul li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.boxs ul li a:hover {
+    color: #fff;  
+}
+
+.boxs p {
+    color: #fff;
+    text-align: justify;  
+}
+
+.footer {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 0px 20px;
+}
+
+.footer .sociais {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer h2 {
     color: #fff;
 }
 
-.nav-bar {
+.sociais .social {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #ddd;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background .3s linear;
+}
+
+.sociais .social:hover {
+    background: #444;
+}
+
+.sociais .social a {
+    color: #000;
+    font-size: 1.5em;
+    transition: color .3s linear;
+}
+
+.sociais .social:hover a{
+    color: #fff;
+}
+
+.nav-inicio {
     position: relative;
     display: flex;
     flex-flow: row wrap;
@@ -55,7 +136,7 @@ footer {
     height: 60px;
 }
 
-.nav-bar div {
+.nav-inicio div {
     flex: 2;
     text-align: left;
     margin-top: 0px;
@@ -63,18 +144,18 @@ footer {
 }
 
 
-.nav-bar ul {
+.nav-inicio ul {
     flex: 4;
     text-align: right;
     margin: 10px 0;
     margin-right: 20px;
 }
 
-.nav-bar ul li {
+.nav-inicio ul li {
     display: inline;
 }
 
-.nav-bar ul li a {
+.nav-inicio ul li a {
     display: inline-block;
     text-decoration: none;
     padding: 12px;
@@ -82,7 +163,7 @@ footer {
     color: rgb(72, 70, 70);
 }
 
-.nav-bar ul li a:hover {
+.nav-inicio ul li a:hover {
     background-color: white;
     border-radius: 20px;
 }
@@ -109,7 +190,7 @@ footer {
 
 .div-filtro ul li a:hover {
     background: rgb(229, 187, 18);
-    border-radius: 30px;
+    border-radius: 100px;
 }
 
 .div-filtro ul li a span {
@@ -196,6 +277,7 @@ footer {
     border: 1px solid #c0c0c0;
     border-radius: 60px;
     box-shadow: 5px 5px 5px 5px #c0c0c0;
+    cursor: pointer; 
 }
 
 .card-sobre:hover {
@@ -205,8 +287,9 @@ footer {
 
 .div-sobre div img {
     width: 100%;
-    height: 90%;
+    height: 80%;
     text-align: center;
+    margin-top: 25px;
 }
 
 .div-sobre div h2 {
@@ -234,7 +317,6 @@ footer {
 }
 
 
-
 /*Responsivo*/
 @media screen and (max-width: 500px) {
     .card-pacote {
@@ -246,7 +328,7 @@ footer {
         max-width: 100%;
     }
 
-    .nav-bar ul {
+    .nav-inicio ul {
         display: none;
     }
 
@@ -255,6 +337,20 @@ footer {
     }
 
     .card-sobre {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .boxs {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .boxs:nth-child(4) {
         width: 100%;
     }
 }
