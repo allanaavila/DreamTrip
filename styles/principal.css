@@ -258,22 +258,26 @@ footer .boxs:nth-child(4) {
 
 /*Sobre a empresa*/
 .div-sobre {    
-    display: flex;
-    margin-top: 20px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px 40px 30px;
+    margin: auto;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.sobre {
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 50%;
+    height: 250px;
+    object-fit: cover; 
+    border-radius: 15px;
 }
 
 .card-sobre {
     display: flex;
-    width: 30%;
-    height: 250px;
-    margin: 10px;
-    flex-direction: row;
-    flex-wrap: nowrap;
     border: 1px solid #c0c0c0;
     border-radius: 60px;
     box-shadow: 5px 5px 5px 5px #c0c0c0;
@@ -285,60 +289,28 @@ footer .boxs:nth-child(4) {
     border-bottom: 10px solid #e2e1e1;
 }
 
-.div-sobre div img {
-    width: 100%;
-    height: 80%;
+
+.cards h3 {
+    color: rgb(60, 167, 238);
+    margin-top: 30px;
+    margin-bottom: 20px;
     text-align: center;
-    margin-top: 25px;
 }
 
-.div-sobre div h2 {
-    margin: 30px 2px 0px 5px;
-    color: #38B6FF;  
-}
-
-.div-sobre div p {
-    margin: 30px 30px 10px 10px;
+.cards p {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-height: 4px;
+    font-size: 1em;
     color: rgb(72, 70, 70);
-    text-align: unset;
-    text-align: center;
-    font-size: 15px;
-}
-
-.card-sobre div:nth-child(1) {
-    width: 50%;
-    height: 100%;
-}
-
-.card-sobre div:nth-child(2) {
-    width: 50%;
-    height: 100%;
-    text-align: center;
 }
 
 
 /*Responsivo*/
 @media screen and (max-width: 500px) {
-    .card-pacote {
-        margin: 10px auto;
-        width: 360px;
-    }
-
-    .card-pacote li img {
-        max-width: 100%;
-    }
 
     .nav-inicio ul {
         display: none;
-    }
-
-    .div-sobre {
-        flex-wrap: wrap;
-    }
-
-    .card-sobre {
-        width: 100%;
-        text-align: center;
     }
 
     footer {
