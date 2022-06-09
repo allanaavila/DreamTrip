@@ -248,7 +248,7 @@ footer .boxs:nth-child(4) {
 .caption p a {
     max-height: 4px;
     font-size: 1em;
-    color: rgb(72, 70, 70);
+    color: #444;
 }
 .centered {
     margin: 0 auto;
@@ -295,14 +295,17 @@ footer .boxs:nth-child(4) {
     margin-top: 30px;
     margin-bottom: 20px;
     text-align: center;
+    
 }
 
 .cards p {
     margin-left: 20px;
     margin-right: 20px;
     max-height: 4px;
-    font-size: 1em;
-    color: rgb(72, 70, 70);
+    font-size: 14px;
+    color: rgb(118, 107, 107);
+    text-align: left;  
+    font-stretch: condensed;
 }
 
 
@@ -311,6 +314,26 @@ footer .boxs:nth-child(4) {
 
     .nav-inicio ul {
         display: none;
+    }
+
+    .div-sobre {
+        display: grid;
+        grid-template-columns: 300px;
+    }
+
+
+
+    .sobre {
+        max-width: 100%;
+    }
+
+    .card-sobre {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cards p {
+        font-size: 14px;
     }
 
     footer {
