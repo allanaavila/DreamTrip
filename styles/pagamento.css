@@ -37,47 +37,7 @@ main {
     border: 1px solid #ccc;
 }
 
-footer {
-    width: 100%;
-    min-height: 200px;
-    background: #444;
-    display: flex;
-}
-
-footer .boxs {
-    width: 320px;
-    min-height: 150px;
-    padding: 20px;
-}
-
 /*Sobre Nos footer*/
-footer .boxs:nth-child(4) {
-    width: 400px;
-}
-
-.boxs h2 {
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.boxs ul li {
-    margin: 10px 0;
-    list-style: none;
-}
-
-.boxs ul li a {
-    color: #ddd;
-    text-decoration: none;
-}
-
-.boxs ul li a:hover {
-    color: #fff;  
-}
-
-.boxs p {
-    color: #fff;
-    text-align: justify;  
-}
 
 .footer {
     width: 100%;
@@ -170,3 +130,5 @@ footer .boxs:nth-child(4) {
     background-color: rgba(255, 255, 255, 0.483);
     border-radius: 20px;
 }
+
+
