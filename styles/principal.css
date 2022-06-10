@@ -127,6 +127,7 @@ footer .boxs:nth-child(4) {
     color: #fff;
 }
 
+/*Barra Inicial*/
 .nav-inicio {
     position: relative;
     display: flex;
@@ -175,6 +176,7 @@ footer .boxs:nth-child(4) {
     border-radius: 20px;
 }
 
+/*Barra de Icons do Filtro*/
 .div-filtro {
     margin: 20px 40px;
     display: flex;
@@ -204,6 +206,7 @@ footer .boxs:nth-child(4) {
     display: block;
 }
 
+/*Cards*/
 .container {
     margin: auto;
     max-width: 1100px;
@@ -235,7 +238,6 @@ footer .boxs:nth-child(4) {
     width: 4px;
     height: 4px;
 }
-
 
 /* titulo card*/
 .caption h4 {
@@ -309,7 +311,7 @@ footer .boxs:nth-child(4) {
 }
 
 
-/*Responsivo*/
+/*Responsivo pagina inicial*/
 @media screen and (max-width: 500px) {
 
     .nav-inicio ul {
