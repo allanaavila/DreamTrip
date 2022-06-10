@@ -171,7 +171,7 @@ footer .boxs:nth-child(4) {
 }
 
 .nav-inicio ul li a:hover {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.483);
     border-radius: 20px;
 }
 
@@ -295,7 +295,6 @@ footer .boxs:nth-child(4) {
     margin-top: 30px;
     margin-bottom: 20px;
     text-align: center;
-    
 }
 
 .cards p {
@@ -320,8 +319,6 @@ footer .boxs:nth-child(4) {
         display: grid;
         grid-template-columns: 300px;
     }
-
-
 
     .sobre {
         max-width: 100%;
