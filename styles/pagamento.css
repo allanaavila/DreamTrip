@@ -470,4 +470,13 @@ input#submit:hover {
         font-size: 22px;
     }  
 
+    .geralInfo {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .footer {
+        display: none;
+    }
+
 }
