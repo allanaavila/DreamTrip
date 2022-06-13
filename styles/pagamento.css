@@ -311,7 +311,7 @@ fieldset {
 }
 
 .hospedes h4 {
-    color: #b2b2b2;
+    color:rgb(72, 70, 70);
     margin: 5px 5px;
     margin-top: 10px;
     margin-left: 20px;
@@ -344,7 +344,7 @@ select {
 }
 
 .dias h4 {
-    color: #b2b2b2;
+    color:rgb(72, 70, 70);
     margin: 5px 5px;
     margin-left: 20px;
     font-size: 14px;
@@ -417,7 +417,7 @@ input {
 }
 
 label {
-    color: #b2b2b2;
+    color:rgb(72, 70, 70);
 }
 
 /*Botao reservar*/
@@ -456,6 +456,18 @@ input#submit:hover {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
+.link {
+    margin-top: 20px;
+    margin-left: 8px;
+    color:rgb(72, 70, 70);
+}
+
+.link a {
+    text-decoration: none;
+}
+
+
 
 /*Responsivo Pagamento*/
 @media screen and (max-width: 500px) {
