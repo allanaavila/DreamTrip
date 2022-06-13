@@ -303,10 +303,23 @@ fieldset {
 
 /*Hospedes*/
 .hospedes {
+    display: flex;
     height: 60px;
     width: 100%;
     margin-bottom: 10px;
     margin-top: 30px;
+}
+
+.hospedes h4 {
+    color: #b2b2b2;
+    margin: 5px 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.hospedes select {
+    margin-left: 210px;
 }
 
 select {
@@ -322,16 +335,9 @@ select {
     cursor: pointer;
 }
 
-.hospedes h4 {
-    color: #b2b2b2;
-    margin: 5px 5px;
-    margin-top: 10px;
-    margin-left: 20px;
-    font-size: 14px;
-}
-
 /*Noites para reserva*/
 .dias {
+    display: flex;
     height: 60px;
     width: 100%;
     margin-bottom: 10px;
@@ -342,6 +348,10 @@ select {
     margin: 5px 5px;
     margin-left: 20px;
     font-size: 14px;
+}
+
+.dias select {
+    margin-left: 230px;
 }
 
 /*Taxa da Limpeza*/
@@ -356,12 +366,12 @@ select {
 }
 
 .valorTaxa p {
-    margin-left: 202px;
+    margin-left: 190px;
 }
 
 /*Taxa do Embarque*/
 .valorTaxaEmbarque p {
-    margin-left: 190px;
+    margin-left: 175px;
 }
 
 .taxaEmbarque {
@@ -376,7 +386,7 @@ select {
 
 /*Valor Final*/
 .valorFinal p {
-    margin-left: 270px;
+    margin-left: 258px;
 }
 
 .total {
@@ -442,7 +452,7 @@ input#submit:hover {
 }
 
 .parcelamento select {
-    margin-left: 230px;
+    margin-left: 220px;
     margin-right: 10px;
     margin-bottom: 10px;
 }
