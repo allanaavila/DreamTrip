@@ -187,19 +187,19 @@ main {
 
 /*Informacoes*/
 .div-info {
-    display: flex;
-    width: 50%;
-    height: 800px;
-    margin: 10px 200px;
+    display : inline-block;
+    width: 450px;
+    height: 700px;
+    margin: 20px 200px;
 }
 
 
 /*O que tem*/
 .oferece {
     margin-right: 40px;
-    width: 100%;
+    width: 280px;
     height: 360px;
-    margin-top: 10px;
+    margin-top: 12px;
     border: 1px solid rgb(227, 222, 222);
     border-radius: 30px;
 }
@@ -233,11 +233,10 @@ main {
 
 
 /*O que deve saber*/
-
 .saber {
     margin-top: 20px;
     margin-right: 40px;
-    width: 100%;
+    width: 280px;
     height: 260px;
     border: 1px solid rgb(227, 222, 222);
     border-radius: 30px;
@@ -270,6 +269,183 @@ main {
     margin-bottom: 10px;
 }
 
+/*Formulario*/
+.geralInfo {
+    display: flex;
+    width: 50%;
+}
+
+.forms {
+    display : inline-block;
+    width: 200px;
+    height: 600px;
+    margin: 22px 10px;
+}
+
+/*Margin geral*/
+fieldset {
+    width: 80%;
+    margin-top: 20px;
+    border: 1px solid #d6d6d6;
+    line-height: 1.6em;
+    border-radius: 50px;
+    margin-top: 5px;
+}
+
+/*Valor*/
+.tituloValor h2 {
+    height: 60px;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/*Hospedes*/
+.hospedes {
+    height: 60px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+select {
+    color: #444444;
+    text-shadow: 0px 1px 1px #fff;
+    border: 1px solid #b2b2b2;
+    background-color: #ccc;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.hospedes h4 {
+    color: #b2b2b2;
+    margin: 5px 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+/*Noites para reserva*/
+.dias {
+    height: 60px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.dias h4 {
+    color: #b2b2b2;
+    margin: 5px 5px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+/*Taxa da Limpeza*/
+.taxaLimpeza {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.taxaLimpeza h2 {
+    margin-left: 20px;
+}
+
+.valorTaxa p {
+    margin-left: 220px;
+}
+
+/*Taxa do Embarque*/
+.valorTaxaEmbarque p {
+    margin-left: 208px;
+}
+
+.taxaEmbarque {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.taxaEmbarque h2 {
+    margin-left: 20px;
+}
+
+/*Valor Final*/
+.valorFinal p {
+    margin-left: 290px;
+}
+
+.total {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.total h2 {
+    margin-left: 23px;
+    font-size: 20px;
+}
+
+/*Nome e Email*/
+.registro {
+    margin-top: 1px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    width: 260px;
+}
+
+input {
+    width: 200px;
+    border-radius: 5px;
+    margin-left: 5px;
+    border: 1px solid #b2b2b2;
+    height: 20px;
+}
+
+label {
+    color: #b2b2b2;
+}
+
+/*Botao reservar*/
+input#submit {
+    color: #444444;
+    text-shadow: 0px 1px 1px #fff;
+    border: 1px solid #b2b2b2;
+    background-color: #ccc;
+    border-radius: 10px;
+    width: 320px;
+    font-size: 16px;
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+input#submit:hover {
+    color: #333333;
+    border: 1px solid #b2b2b2;
+    background-color: #d6d6d6;
+}
+
+.parcelamento {
+    display: flex;
+    margin-top: 20px;
+}
+
+.parcelamento h4 {
+    margin-left: 20px;
+}
+
+.parcelamento select {
+    margin-left: 230px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
 
 /*Responsivo Pagamento*/
 @media screen and (max-width: 500px) {
@@ -282,5 +458,6 @@ main {
     .titulo h1{
         margin-left: 20px;
         font-size: 22px;
-    }
+    }  
+
 }

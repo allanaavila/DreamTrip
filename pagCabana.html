@@ -48,8 +48,8 @@
                     </div>
             </div>
 
-            <!--Informacoes-->
-
+            <!--Informacoes-->           
+            <div class="geralInfo">
             <div class="div-info">
                 <div class="informacoes">
                     <ul class="oferece">
@@ -92,6 +92,96 @@
                 </div>
             </div>
 
+            <!--Formulario-->
+            <div class="forms">
+                <fieldset>
+                <div class="tituloValor">
+                    <h2>R$1.736 / noite</h2>
+                </div>
+
+                <!--Nome-->
+                <form>
+                    <div class="registro">
+                        <label for="name" class="title">Nome: </label>
+                        <input type="text" id="name" name="name"/>
+                    </div>
+                    <div class="registro">
+                        <label for="email" class="title">E-mail: </label>
+                        <input type="text" id="email" name="email"/>
+                    </div>
+                </form>
+                
+                <!--Quantidade de Hospedes-->
+                <form class="hospedes">
+                    <h4>HÓSPEDES</h4>
+                    <select nome="devices">
+                        <option value="1hospede">1 hóspede</option>
+                        <option value="2hospede">2 hóspedes</option>
+                        <option value="3hospede">3 hóspedes</option>
+                    </select>
+                </form>
+
+                <!--Dias de reserva-->
+                <form class="dias">
+                    <h4>NOITES</h4>
+                    <select nome="devices">
+                        <option value="1dia">1 noite</option>
+                        <option value="2dia">2 noites</option>
+                        <option value="3dia">3 noites</option>
+                        <option value="4dia">4 noites</option>
+                        <option value="5dia">5 noites</option>
+                    </select>
+                </form>
+
+                <!--Taxa de Limpeza-->
+                <div class="taxaLimpeza">
+                    <h2>Taxa de Limpeza</h2>
+                    <div class="valorTaxa">
+                        <p>R$ 80,00</p>
+                    </div>
+                </div>
+                <!--Taxa de Embarque-->
+                <div class="taxaEmbarque">
+                    <h2>Taxa de Embarque</h2>
+                    <div class="valorTaxaEmbarque">
+                        <p>R$ 400,00</p>
+                    </div>
+                </div>
+
+                <!--Total-->
+                <div class="total">
+                    <h2>Total</h2>
+                    <div class="valorFinal">
+                        <p>R$ 2.936</p>
+                    </div>
+                </div>
+
+                <!--Botao reservar-->
+                <div class="reservar">
+                    <input type="submit" value="Reservar" id="submit"/>
+                </div>
+
+                <!--Parcelamento-->
+                <form class="parcelamento">
+                    <h4>Parcelamento</h4>
+                    <select nome="devices">
+                        <option value="parc1">1x sem juros</option>
+                        <option value="parc1">2x sem juros</option>
+                        <option value="parc1">3x sem juros</option>
+                        <option value="parc1">4x sem juros</option>
+                        <option value="parc1">5x sem juros</option>
+                        <option value="parc1">6x sem juros</option>
+                    </select>
+                </form>
+
+                <div class="reservar">
+                    <input type="submit" value="Pagar" id="submit"/>
+                </div>
+            </fieldset>
+
+            
+        </div>
+    </div>
         </main>
 
         <div class="footer">
