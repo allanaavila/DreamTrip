@@ -132,6 +132,15 @@ main {
     border-radius: 20px;
 }
 
+/*Titulo*/
+.titulo h1{
+    margin-left: 305px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #444;
+
+}
 /*photos inicio*/
 .container {
     margin: auto;
@@ -180,32 +189,19 @@ main {
 .div-info {
     display: flex;
     width: 50%;
-    height: 1000px;
-    margin: 20px 200px;
+    height: 800px;
+    margin: 5px 300px;
 }
 
-.informacoes h3 {
-    color: rgb(21, 21, 21);
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 20px;
-}
-
-.informacoes h4 {
-    color: rgb(21, 21, 21);
-    margin-top: 6px;
-    margin-left: 20px;
-    font-size: 20px;
-}
 
 /*O que tem*/
-
 .oferece {
     width: 100%;
     height: 330px;
-    background-color: rgb(220, 216, 216);
-    border-radius: 30px;
+    background-color: rgb(227, 222, 222);
+    border-radius: 20px;
 }
+
 .oferece h2 {
     width: 100%;
     color: rgb(17, 16, 16);
@@ -233,10 +229,11 @@ main {
 /*O que deve saber*/
 
 .saber {
+    margin-left: 10px;
     width: 100%;
     height: 260px;
-    background-color: rgb(220, 216, 216);
-    border-radius: 30px;
+    background-color: rgb(227, 222, 222);
+    border-radius: 20px;
 }
 .saber h2 {
     width: 100%;
