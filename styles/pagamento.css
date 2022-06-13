@@ -273,6 +273,7 @@ main {
 .geralInfo {
     display: flex;
     width: 50%;
+    height: 900px;
 }
 
 .forms {
@@ -289,7 +290,6 @@ fieldset {
     border: 1px solid #d6d6d6;
     line-height: 1.6em;
     border-radius: 50px;
-    margin-top: 5px;
 }
 
 /*Valor*/
@@ -356,12 +356,12 @@ select {
 }
 
 .valorTaxa p {
-    margin-left: 220px;
+    margin-left: 202px;
 }
 
 /*Taxa do Embarque*/
 .valorTaxaEmbarque p {
-    margin-left: 208px;
+    margin-left: 190px;
 }
 
 .taxaEmbarque {
@@ -376,7 +376,7 @@ select {
 
 /*Valor Final*/
 .valorFinal p {
-    margin-left: 290px;
+    margin-left: 270px;
 }
 
 .total {
