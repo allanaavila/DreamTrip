@@ -134,13 +134,13 @@ main {
 
 /*Titulo*/
 .titulo h1{
-    margin-left: 305px;
+    margin-left: 200px;
     margin-bottom: 20px;
     margin-top: 20px;
     font-size: 30px;
     color: #444;
-
 }
+
 /*photos inicio*/
 .container {
     margin: auto;
@@ -190,16 +190,18 @@ main {
     display: flex;
     width: 50%;
     height: 800px;
-    margin: 5px 300px;
+    margin: 10px 200px;
 }
 
 
 /*O que tem*/
 .oferece {
+    margin-right: 40px;
     width: 100%;
-    height: 330px;
-    background-color: rgb(227, 222, 222);
-    border-radius: 20px;
+    height: 360px;
+    margin-top: 10px;
+    border: 1px solid rgb(227, 222, 222);
+    border-radius: 30px;
 }
 
 .oferece h2 {
@@ -208,8 +210,12 @@ main {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     margin-left: 20px;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.oferece:hover {
+    background-color: #ccc;
 }
 
 .oferece li a{
@@ -229,19 +235,25 @@ main {
 /*O que deve saber*/
 
 .saber {
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 40px;
     width: 100%;
     height: 260px;
-    background-color: rgb(227, 222, 222);
-    border-radius: 20px;
+    border: 1px solid rgb(227, 222, 222);
+    border-radius: 30px;
 }
+
+.saber:hover {
+    background-color: #ccc;
+}
+
 .saber h2 {
     width: 100%;
     color: rgb(17, 16, 16);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     margin-left: 20px;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -262,4 +274,13 @@ main {
 /*Responsivo Pagamento*/
 @media screen and (max-width: 500px) {
     
+    .div-info {
+        margin-left: 60px;
+        width: 300px;
+    }
+
+    .titulo h1{
+        margin-left: 20px;
+        font-size: 22px;
+    }
 }
