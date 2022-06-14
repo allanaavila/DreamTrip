@@ -50,7 +50,7 @@ function montarTela()
     tituloPacote.innerHTML = pacote.nome;
 
     let precoPacote = this.document.querySelector('#valorPacote');
-    precoPacote.innerHTML = 'R$ ' +  pacote.valor.toFixed(2) + ' / noite';
+    precoPacote.innerHTML = 'R$ ' +  pacote.valor.toFixed(2) + ' / noite + voo';
 
     let taxaLim = this.document.querySelector('#taxaLimp');
     taxaLim.innerHTML = 'R$ ' + pacote.taxaLimpeza.toFixed(2);
