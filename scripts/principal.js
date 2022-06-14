@@ -1,7 +1,7 @@
 
 window.addEventListener("load", function () {
 
-    
+    //funcao para retornar todos os pacotes
     let divCards = this.document.querySelector('#div-cards');
     divCards.innerHTML = '';
 
@@ -26,6 +26,7 @@ window.addEventListener("load", function () {
     }
 });
 
+//Funcao para filtrar categorias
 function montarTelaPorCategoria(nomeCategoria) 
 {
     let divCards = this.document.querySelector('#div-cards');
