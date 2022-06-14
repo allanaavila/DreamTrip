@@ -11,6 +11,7 @@ let agencia = {
             taxaEmbarque: Number = 400.0,
             foto: String = "./img/cabanas/img1.png",
             fotos: String = ["./img/cabanas/img2.png", "./img/cabanas/img3.png", "./img/cabanas/img4.png", "./img/cabanas/img5.png"],
+            link: String = "https://www.youtube.com/watch?v=60pK0VWLJOI",
         },
         {
             codigo: 2,
@@ -23,6 +24,7 @@ let agencia = {
             taxaEmbarque: 400.0,
             foto: "./img/articos/img1.png",
             fotos: ["./img/articos/img2.png", "./img/articos/img3.png", "./img/articos/img4.png", "./img/articos/img5.png"],
+            link:  "https://www.youtube.com/watch?v=G3F_kiDxgC8",
         },
         {
             codigo: 3,
@@ -35,6 +37,7 @@ let agencia = {
             taxaEmbarque: 300.0,
             foto: "./img/barcos/img1.png",
             fotos: ["./img/barcos/img2.png", "./img/barcos/img3.png","./img/barcos/img4.png", "./img/barcos/img5.png"],
+            link:  "https://www.youtube.com/watch?v=PpszCVk8tt0",
         },
         {
             codigo: 4,
@@ -47,7 +50,8 @@ let agencia = {
             taxaEmbarque: 400.0,
             foto: "./img/hoteis/img1.png",
             fotos: ["./img/hoteis/img2.png", "./img/hoteis/img3.png","./img/hoteis/img4.png", "./img/hoteis/img5.png"],
-        },
+            link:  "https://www.youtube.com/watch?v=Xiw9yIp8p20",
+        },  
         {
             codigo: 5,
             nome: "Huasca de Ocampo, México",
@@ -59,6 +63,7 @@ let agencia = {
             taxaEmbarque: 300.0,
             foto: "./img/casas/img1.png",
             fotos: ["./img/casas/img2.png", "./img/casas/img3.png","./img/casas/img4.png", "./img/casas/img5.png"],
+            link: "https://www.youtube.com/watch?v=MC4GI3_pBjI",
         },
         {
             codigo: 6,
@@ -71,6 +76,7 @@ let agencia = {
             taxaEmbarque: 300.0,
             foto: "./img/tropicais/img1.png",
             fotos: ["./img/tropicais/img2.png", "./img/tropicais/img3.png","./img/tropicais/img4.png", "./img/tropicais/img5.png"],
+            link: "https://www.youtube.com/watch?v=C7NDSu2luR8",
         },
         {
             codigo: 7,
@@ -83,6 +89,7 @@ let agencia = {
             taxaEmbarque: 160.0,
             foto: "./img/praias/img1.png",
             fotos: ["./img/praias/img2.png", "./img/praias/img3.png","./img/praias/img4.png", "./img/praias/img5.png"],
+            link: "https://www.youtube.com/watch?v=yfiKNyfu_OQ",
         },
         {
             codigo: 8,
@@ -95,6 +102,7 @@ let agencia = {
             taxaEmbarque: 600.0,
             foto: "./img/ilhas/img1.png",
             fotos: ["./img/ilhas/img2.png", "./img/ilhas/img3.png","./img/ilhas/img4.png", "./img/ilhas/img5.png"],
+            link: "https://www.youtube.com/watch?v=F8aMRvqq-Qs",
         },
     ],
     retornarTodosPacotes: function() {

@@ -43,6 +43,9 @@ function montarTela()
     let imagem5 = this.document.querySelector('#foto5');
     imagem5.src = pacote.fotos[3];
 
+    let videos = this.document.querySelector('#links');
+    videos.href = pacote.link;
+
     let tituloPacote = this.document.querySelector('#nomePacote');
     tituloPacote.innerHTML = pacote.nome;
 
