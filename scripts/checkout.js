@@ -5,6 +5,17 @@ window.addEventListener('load', function(){
     calcNoites.addEventListener('change', function(){
         montarTela();
     });
+
+    let calcHospedes = this.document.querySelector('#hospede');
+    calcHospedes.addEventListener('change', function(){
+        montarTela();
+    });
+
+    let calcParcelamento = this.document.querySelector('#parcelar');
+    calcParcelamento.addEventListener('change', function(){
+        montarTela();
+    });
+
 });
 
 function montarTela()
@@ -17,9 +28,23 @@ function montarTela()
     let pacote = agencia.retornarPacotePorCodigo(codigo);
    // console.log(pacote);
 
-
    let imagemFotoPrincipal = this.document.querySelector('#fotoPrincipal');
    imagemFotoPrincipal.src = pacote.foto;
+
+    let imagem2 = this.document.querySelector('#foto2');
+    imagem2.src = pacote.fotos[0];
+
+    let imagem3 = this.document.querySelector('#foto3');
+    imagem3.src = pacote.fotos[1];
+
+    let imagem4 = this.document.querySelector('#foto4');
+    imagem4.src = pacote.fotos[2];
+
+    let imagem5 = this.document.querySelector('#foto5');
+    imagem5.src = pacote.fotos[3];
+
+    let videos = this.document.querySelector('#links');
+    videos.href = pacote.link;
 
     let tituloPacote = this.document.querySelector('#nomePacote');
     tituloPacote.innerHTML = pacote.nome;
@@ -33,11 +58,39 @@ function montarTela()
     let taxaEmbarq = this.document.querySelector('#taxaEmb');
     taxaEmbarq.innerHTML = 'R$ ' + pacote.taxaEmbarque.toFixed(2);
 
+    let totalHospedes = this.document.querySelector('#hospede option:checked').value;
+    //console.log(totalHospedes);
+
     let totalNoites = this.document.querySelector('#noites option:checked').value;
     //console.log(totalNoites);
 
-    let calculoValorTotal = (pacote.valor * totalNoites)  + pacote.taxaLimpeza + pacote.taxaEmbarque;
+    let calcTotalHospedes = (pacote.valor * totalHospedes);
+
+    let calcTotalNoites = (calcTotalHospedes * totalNoites);
+
+    let calcHospNoites = calcTotalNoites;
+    
+    let calculoValorTotal = calcHospNoites + pacote.taxaLimpeza + pacote.taxaEmbarque;
 
     let valorTotal = this.document.querySelector('#valorTotal');
     valorTotal.innerHTML = 'R$ ' + calculoValorTotal.toFixed(2);
+
+    let totalParcelas = this.document.querySelector('#parcelar option:checked').value;
+
+    let calcParcelamentoFinal = calculoValorTotal / totalParcelas;
+
+    let valorFinalParcelas = this.document.querySelector('#valorParceladoFinal');
+    valorFinalParcelas.innerHTML = 'R$ ' + calcParcelamentoFinal.toFixed(2);
+}
+
+//Mensagem botao reservado
+function reservar()
+{
+    alert("Pacote reservado com sucesso!");
+}
+
+//Mensagem botao pagar
+function pagar()
+{
+    alert("Pago com Sucesso!");
 }
