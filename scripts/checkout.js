@@ -14,7 +14,8 @@ window.addEventListener('load', function(){
     let calcParcelamento = this.document.querySelector('#parcelar');
     calcParcelamento.addEventListener('change', function(){
         montarTela();
-    })
+    });
+
 });
 
 function montarTela()
@@ -26,7 +27,6 @@ function montarTela()
 
     let pacote = agencia.retornarPacotePorCodigo(codigo);
    // console.log(pacote);
-
 
    let imagemFotoPrincipal = this.document.querySelector('#fotoPrincipal');
    imagemFotoPrincipal.src = pacote.foto;
@@ -81,4 +81,16 @@ function montarTela()
 
     let valorFinalParcelas = this.document.querySelector('#valorParceladoFinal');
     valorFinalParcelas.innerHTML = 'R$ ' + calcParcelamentoFinal.toFixed(2);
+}
+
+//Mensagem botao reservado
+function reservar()
+{
+    alert("Pacote reservado com sucesso!");
+}
+
+//Mensagem botao pagar
+function pagar()
+{
+    alert("Pago com Sucesso!");
 }
