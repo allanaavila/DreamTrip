@@ -32,11 +32,11 @@
         <main>
             <!--Pagina principal pagamento-->
             <div class="titulo">
-                <h1>São Bento do Sapucai, Brasil</h1>
+                <h1 id="nomePacote">São Bento do Sapucai, Brasil</h1>
             </div>
             <div class="container centered">
                 <div class="pagamentoCabana">
-                    <img src="./img/cabanas/img1.png" alt="" class="photo">
+                    <img id="fotoPrincipal" src="./img/cabanas/img1.png" alt="" class="photo">
                 </div>
                     <div class="captionPhoto">
                         <img src="./img/cabanas/img2.png" alt="" class="photo1">
@@ -101,7 +101,7 @@
             <div class="forms">
                 <fieldset>
                 <div class="tituloValor">
-                    <h2>R$1.736 / noite</h2>
+                    <h2 id="valorPacote">R$ 1.736 / noite</h2>
                 </div>
 
                 <!--Nome-->
@@ -119,7 +119,7 @@
                 <!--Quantidade de Hospedes-->
                 <form class="hospedes">
                     <h4>HÓSPEDES</h4>
-                    <select nome="devices">
+                    <select id="hospede">
                         <option value="1hospede">1 hóspede</option>
                         <option value="2hospede">2 hóspedes</option>
                         <option value="3hospede">3 hóspedes</option>
@@ -129,12 +129,12 @@
                 <!--Dias de reserva-->
                 <form class="dias">
                     <h4>NOITES</h4>
-                    <select nome="devices">
-                        <option value="1dia">1 noite</option>
-                        <option value="2dia">2 noites</option>
-                        <option value="3dia">3 noites</option>
-                        <option value="4dia">4 noites</option>
-                        <option value="5dia">5 noites</option>
+                    <select id="noites">
+                        <option value="1">1 noite</option>
+                        <option value="2">2 noites</option>
+                        <option value="3">3 noites</option>
+                        <option value="4">4 noites</option>
+                        <option value="5">5 noites</option>
                     </select>
                 </form>
 
@@ -142,14 +142,14 @@
                 <div class="taxaLimpeza">
                     <h2>Taxa de Limpeza</h2>
                     <div class="valorTaxa">
-                        <p>R$ 80,00</p>
+                        <p id="taxaLimp">R$ 80,00</p>
                     </div>
                 </div>
                 <!--Taxa de Embarque-->
                 <div class="taxaEmbarque">
                     <h2>Taxa de Embarque</h2>
                     <div class="valorTaxaEmbarque">
-                        <p>R$ 400,00</p>
+                        <p id="taxaEmb">R$ 400,00</p>
                     </div>
                 </div>
 
@@ -157,7 +157,7 @@
                 <div class="total">
                     <h2>Total</h2>
                     <div class="valorFinal">
-                        <p>R$ 2.936</p>
+                        <p id="valorTotal">R$ 2.936</p>
                     </div>
                 </div>
 
@@ -204,5 +204,8 @@
                 </div>
             </div>
         </div>
+
+        <script src="./scripts/agencia.js"></script>
+        <script src="./scripts/checkout.js"></script>
     </body>
 </html>
