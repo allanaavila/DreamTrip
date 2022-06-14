@@ -297,7 +297,7 @@ fieldset {
     height: 60px;
     width: 100%;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 20px;
 }
 
@@ -312,8 +312,7 @@ fieldset {
 
 .hospedes h4 {
     color:rgb(72, 70, 70);
-    margin: 5px 5px;
-    margin-top: 10px;
+    margin-top: 1px;
     margin-left: 20px;
     font-size: 14px;
 }
@@ -345,7 +344,6 @@ select {
 
 .dias h4 {
     color:rgb(72, 70, 70);
-    margin: 5px 5px;
     margin-left: 20px;
     font-size: 14px;
 }
@@ -386,7 +384,7 @@ select {
 
 /*Valor Final*/
 .valorFinal p {
-    margin-left: 258px;
+    margin-left: 240px;
 }
 
 .total {
@@ -400,25 +398,22 @@ select {
     font-size: 20px;
 }
 
-/*Nome e Email*/
-.registro {
-    margin-top: 1px;
+/*Valor parcelado final*/
+.valorParcelado p {
+    margin-left: 200px;
+}
+
+.parcelado {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.parcelado h4 {
     margin-left: 20px;
-    padding-bottom: 10px;
-    width: 260px;
+    font-size: 14px;
 }
 
-input {
-    width: 200px;
-    border-radius: 5px;
-    margin-left: 5px;
-    border: 1px solid #b2b2b2;
-    height: 20px;
-}
-
-label {
-    color:rgb(72, 70, 70);
-}
 
 /*Botao reservar*/
 input#submit {

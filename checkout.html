@@ -39,12 +39,12 @@
                     <img id="fotoPrincipal" src="./img/cabanas/img1.png" alt="" class="photo">
                 </div>
                     <div class="captionPhoto">
-                        <img src="./img/cabanas/img2.png" alt="" class="photo1">
-                        <img src="./img/cabanas/img3.png" alt="" class="photo1">
+                        <img id="foto2" src="./img/cabanas/img2.png" alt="" class="photo1">
+                        <img id="foto3" src="./img/cabanas/img3.png" alt="" class="photo1">
                     </div>
                     <div class="captionPhoto1">
-                        <img src="./img/cabanas/img4.png" alt="" class="photo2">
-                        <img src="./img/cabanas/img5.png" alt="" class="photo2">
+                        <img id="foto4" src="./img/cabanas/img4.png" alt="" class="photo2">
+                        <img id="foto5" src="./img/cabanas/img5.png" alt="" class="photo2">
                     </div>
             </div>
 
@@ -90,7 +90,7 @@
                         </li>
                     </ul>
                 </div>
-
+                <!--Link com video sobre a cidade-->
                 <div class="link">
                     <h4>Mais informações</h4>
                     <a href="https://www.youtube.com/watch?v=60pK0VWLJOI" target="_blank">Visite São Bento do Sapucaí!</a>
@@ -103,26 +103,14 @@
                 <div class="tituloValor">
                     <h2 id="valorPacote">R$ 1.736 / noite</h2>
                 </div>
-
-                <!--Nome-->
-                <form>
-                    <div class="registro">
-                        <label for="name" class="title">Nome: </label>
-                        <input type="text" id="name" name="name"/>
-                    </div>
-                    <div class="registro">
-                        <label for="email" class="title">E-mail: </label>
-                        <input type="text" id="email" name="email"/>
-                    </div>
-                </form>
                 
                 <!--Quantidade de Hospedes-->
                 <form class="hospedes">
                     <h4>HÓSPEDES</h4>
                     <select id="hospede">
-                        <option value="1hospede">1 hóspede</option>
-                        <option value="2hospede">2 hóspedes</option>
-                        <option value="3hospede">3 hóspedes</option>
+                        <option value="1">1 hóspede</option>
+                        <option value="2">2 hóspedes</option>
+                        <option value="3">3 hóspedes</option>
                     </select>
                 </form>
 
@@ -169,15 +157,22 @@
                 <!--Parcelamento-->
                 <form class="parcelamento">
                     <h4>Parcelar</h4>
-                    <select nome="devices">
-                        <option value="parc1">1x sem juros</option>
-                        <option value="parc1">2x sem juros</option>
-                        <option value="parc1">3x sem juros</option>
-                        <option value="parc1">4x sem juros</option>
-                        <option value="parc1">5x sem juros</option>
-                        <option value="parc1">6x sem juros</option>
+                    <select id="parcelar">
+                        <option value="1">1x sem juros</option>
+                        <option value="2">2x sem juros</option>
+                        <option value="3">3x sem juros</option>
+                        <option value="4">4x sem juros</option>
+                        <option value="5">5x sem juros</option>
+                        <option value="6">6x sem juros</option>
                     </select>
                 </form>
+
+                <div class="parcelado">
+                    <h4>Valor parcelado</h4>
+                    <div class="valorParcelado">
+                        <p id="valorParceladoFinal">R$ 2.936</p>
+                    </div>
+                </div>
 
                 <div class="pagar">
                     <input type="submit" value="Pagar" id="submit"/>
